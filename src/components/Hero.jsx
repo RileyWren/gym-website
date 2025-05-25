@@ -10,6 +10,9 @@ const Hero = () => {
       style={{ backgroundImage: `url(${hero1})` }}
     >
         <Navbar />
+
+        <div class="absolute inset-0 bg-black/50">
+       </div>
     </div>
   );
 };
