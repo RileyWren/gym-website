@@ -10,24 +10,23 @@ const Navbar = () => {
   const navLinks = ["Home", "Services", "Pricing", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 text-white  sm:text-2xl md:text-6xl">
-      <div className="max-w-7xl mx-auto flex justify-between items-center p-4 ">
+    <nav className="fixed top-0 left-0 w-full z-50 text-white">
+      <div className="max-w-7xl mx-auto flex justify-between items-center p-4 sm:mt-2 ">
         {/* Logo */}
-        <a href="#" className="flex items-center space-x-2">
-          <img src={gymLogo} alt="Logo" className="h-20" />
+        <a href="#" className="flex items-center space-x-2 ">
+          <img src={gymLogo} alt="Logo" className="h-13 sm:h-15 md:h-17 lg:h-20" />
         </a>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link}>
-              <a href="#" cla className="text-base sm:text-2xl md:text-2xl mr-3.5 hover:text-gray-300 transition">{link}</a>
+              <a href="#" cla className="text-base sm:text-base md:text-lg hover:text-gray-300 transition">{link}</a>
             </li>
           ))}
-          <li>
-          <Button content='Start 7 day free trial'/>
-          </li>
+
         </ul>
+          <Button content='Start 7 day free trial' />
 
         {/* Mobile Hamburger */}
         <button
