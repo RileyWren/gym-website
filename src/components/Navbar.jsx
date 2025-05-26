@@ -10,7 +10,7 @@ const Navbar = () => {
   const navLinks = ["Home", "Services", "Pricing", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 text-white">
+    <nav className="fixed top-5 sm:top-0 left-0 w-full z-50 text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 sm:mt-2 ">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-2 ">
@@ -24,9 +24,14 @@ const Navbar = () => {
               <a href="#" cla className="text-base sm:text-base md:text-lg hover:text-gray-300 transition">{link}</a>
             </li>
           ))}
-
+ <button
+      type="button"
+      className="py-2.5 px-6 me-2 mb-2 text-xs sm:text-sm md:text-sm font-semibold text-black bg-[#96fb57] rounded-full shadow-md hover:bg-[#85e84d] transition-all duration-200 focus:outline-none focus:ring-[#96fb57]/50"
+    >
+      Start 7 day free trial
+    </button>
         </ul>
-          <Button content='Start 7 day free trial' />
+
 
         {/* Mobile Hamburger */}
         <button
