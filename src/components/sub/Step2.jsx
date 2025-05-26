@@ -6,7 +6,7 @@ import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 const Step2 = () => {
   return (
      <div className='h-screen bg-neutral-950 sm:flex sm:justify-around sm:items-center text-white leading-11'>
-           <div>
+           <div className='hidden sm:block '>
             <img src={feature2} />
           </div>
           <div className='ml-15'>
@@ -29,7 +29,9 @@ const Step2 = () => {
               Dumbells ranging 5lbs-250lbs
             </div>
           </div>
-         
+          <div className='sm:hidden m-10'>
+            <img src={feature2} className='rounded-2xl' />
+          </div>
         </div>
   )
 }

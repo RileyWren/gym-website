@@ -15,7 +15,7 @@ function App() {
  <Hero />
  <Offer />
  <GroupCrossFit />
- <Step2 />
+ {/* <Step2 /> */}
     </>
   )
 }
