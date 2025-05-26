@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react"; // optional icons
 import gymLogo from "../assets/gym.svg"; // your logo
+import Button from "./Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,9 @@ const Navbar = () => {
               <a href="#" cla className="text-base sm:text-2xl md:text-2xl mr-3.5 hover:text-gray-300 transition">{link}</a>
             </li>
           ))}
+          <li>
+          <Button content='Start 7 day free trial'/>
+          </li>
         </ul>
 
         {/* Mobile Hamburger */}
