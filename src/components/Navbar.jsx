@@ -9,7 +9,7 @@ const Navbar = () => {
   const navLinks = ["Home", "Services", "Pricing", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 text-white ">
+    <nav className="fixed top-0 left-0 w-full z-50 text-white  sm:text-2xl md:text-6xl">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 ">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-2">
@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link}>
-              <a href="#" className="hover:text-gray-300 transition sm:text-2xl md:text-6xl">{link}</a>
+              <a href="#" cla className="text-base sm:text-2xl md:text-2xl mr-3.5 hover:text-gray-300 transition">{link}</a>
             </li>
           ))}
         </ul>
