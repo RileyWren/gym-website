@@ -27,7 +27,7 @@ const Hero = () => {
         It doesn’t matter if your goal is to get stronger, burn fat, or just stay fit – our world-class coaches will guide you every step of the way.
       </h4>
       <div className='mb-15 '>
-      <Button content="Start 7 day free trial"/>
+      <Button content="Start 7 day free trial" bgColor="#96fb57" hoverColor="#85e84d" />
       </div>
       <div className=''>
     <Rating />
