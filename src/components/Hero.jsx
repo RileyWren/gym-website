@@ -4,6 +4,7 @@ import hero2 from "../assets/hero2.jpg";
 import Navbar from './Navbar';
 import Button from './Button';
 import Rating from './Rating';
+import man from "../assets/man.jpeg"
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
   <div className="relative z-10 mt-20">
     <Navbar />
     <div className="p-10 text-white max-w-4xl h-screen flex flex-col justify-center text-center items-center sm:text-center md:text-center m-0">
-      <h1 className="text-6xl font-bold mb-4">
+      <h1 className="text-5xl font-bold mb-4 sm:text-6xl">
         Crush your health and fitness goals in no time
       </h1>
       <br></br>
@@ -31,8 +32,9 @@ const Hero = () => {
       <div className=''>
     <Rating />
     </div>
-    <div className='flex justify-around'>
-      <img src= />
+    <div className='flex justify-center items-center text-center'>
+      <img src={man} className=' rounded-full w-15 h-15 aspect-square object-cover mr-5'/>
+      <p className='max-w-96'>“6 months after joining I lost 15lbs and I’m getting stronger.”</p>
     </div>
     </div>
   </div>
