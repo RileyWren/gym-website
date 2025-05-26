@@ -1,0 +1,10 @@
+.parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+}
+
+.child {
+    width: 300px;
+    height: 400px;
+}
