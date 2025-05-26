@@ -53,11 +53,11 @@ const Offer = () => {
         We offer something for <br className='hidden md:block' /> everybody
       </h1>
 
-      <div className="grid w-full justify-center gap-4 px-10 grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
+      <div className="grid w-full justify-center gap-4 px-10 grid-cols-[repeat(auto-fit,_minmax(200px,_2fr))]">
         {images.map((img, idx) => (
           <div
             key={idx}
-            className="relative w-full h-[300px] rounded-lg overflow-hidden bg-blend-overlay bg-[#384638]/80 bg-cover bg-center"
+            className="relative w-full h-[250px] rounded-lg overflow-hidden bg-blend-overlay bg-[#384638]/80 bg-cover bg-center"
             style={{ backgroundImage: `url(${img})` }}
           >
             <div className="absolute inset-0 flex items-center justify-center p-4 bg-black/40">
