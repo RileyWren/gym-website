@@ -10,7 +10,7 @@ import features4 from "../assets/features4.png"
 const GroupCrossFit = () => {
   return (
     <div className='h-screen bg-neutral-950 sm:flex sm:justify-around sm:items-center text-white leading-11'>
-      <div className='ml-15'>
+      <div className='ml-2 sm:ml-15'>
         {/* <div className='border-2 border-lime-900 rounded-full'>Group CrossFit Classes</div> */}
         <div className="border-2 border-lime-900 rounded-full px-4 py-2 text-sm sm:text-base md:text-lg lg:text-xl w-fit mb-9">
   Group CrossFit Classes
@@ -31,7 +31,7 @@ const GroupCrossFit = () => {
         </div>
       </div>
       <div>
-        <img src={features1} />
+        <img src={features1} className='m-10 mr-10' />
       </div>
     </div>
   )

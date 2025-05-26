@@ -21,7 +21,7 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link}>
-              <a href="#" cla className="text-base sm:text-base md:text-lg hover:text-gray-300 transition">{link}</a>
+              <a href="#" className="text-base sm:text-base md:text-lg hover:text-gray-300 transition">{link}</a>
             </li>
           ))}
  <button
