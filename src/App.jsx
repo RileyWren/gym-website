@@ -6,7 +6,8 @@ import Hero from './components/Hero'
 import Offer from './components/Offer'
 import GroupCrossFit from './components/GroupCrossFit'
 import Step2 from './components/sub/Step2.jsx'
-import Reviews from './components/Reviews.jsx'
+import MembershipCards from './components/MembershipCards.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
  <Hero />
  <Offer />
  <GroupCrossFit />
-    <Reviews />
+    <MembershipCards />
     </>
   )
 }
