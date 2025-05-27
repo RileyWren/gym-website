@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react"; // optional icons
-import gymLogo from "../assets/gym.svg"; // your logo
+import { Menu, X } from "lucide-react"; 
+import gymLogo from "../assets/gym.png"; 
 import Button from "./Button";
 
 const Navbar = () => {
