@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Offer from './components/Offer'
 import GroupCrossFit from './components/GroupCrossFit'
 import MembershipCards from './components/MembershipCards.jsx'
+import Reviews from './components/Reviews.jsx'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
  <Offer />
  <GroupCrossFit />
     <MembershipCards />
+    <Reviews />
     </>
   )
 }

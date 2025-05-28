@@ -49,7 +49,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="flex flex-col md:hidden px-6 pt-2 pb-4 bg-transparent text-white "
+            className="flex flex-col md:hidden px-6 pt-2 pb-4 bg-neutral-950 text-white "
           >
             {navLinks.map((link) => (
               <li key={link} className="py-2 border-b border-white/20 ">

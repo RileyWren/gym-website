@@ -7,6 +7,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 import Button from './Button'
+import Reviews from './Reviews'
 
 const MembershipCards = () => {
   return (
@@ -45,6 +46,9 @@ const MembershipCards = () => {
           </div>
         ))}
       </div>
+
+{/* <Reviews /> */}
+
     </div>
   )
 }
