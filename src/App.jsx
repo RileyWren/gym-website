@@ -5,6 +5,7 @@ import GroupCrossFit from './components/GroupCrossFit'
 import MembershipCards from './components/MembershipCards.jsx'
 import Reviews from './components/Reviews.jsx'
 import About from './components/About.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <MembershipCards />
     <Reviews />
     <About />
+    <Footer />
     </>
   )
 }
