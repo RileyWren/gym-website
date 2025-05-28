@@ -1,34 +1,3 @@
-// import React from 'react'
-// import last from '../assets/last.webp'
-
-// const ContactForm = () => {
-//   return (
-//     <div className='sm:flex sm:justify-around gap-40 m-20 p-10'>
-//         <div>
-//         <h3 className='text-3xl font-bold'>Claim your 7 day free trial</h3>
-//         <form className='flex flex-col m-3 p-5'>
-//             <input type='text' className='bg-white rounded-lg p-3 text-black h-10 w-70 m-1' placeholder='name' />
-//             <input type='email' className='bg-white rounded-lg p-3 text-black h-10 w-70 m-1' placeholder='name' />
-//             <input type='number' className='bg-white rounded-lg p-3 text-black h-10 w-70 m-1' placeholder='name' />
-//             <input type='' className='bg-white rounded-lg p-3 text-black h-10 w-70 m-1' placeholder='name' />
-//             <label for="cars">Membership interest...</label>
-//   <select id="cars" name="cars" size="3">
-//     <option value="volvo">Month to Month</option>
-//     <option value="saab">6 month</option>
-//     <option value="fiat">1 year</option>
-//     <option value="audi">else</option>
-//   </select><br/><br/>
-//   <input type="submit"></input>
-//         </form>
-//         </div>
-//         <div>
-//         <img src={last} className='rounded-3xl h-76' />
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default ContactForm
 
 import React from 'react'
 import last from '../assets/last.webp'
