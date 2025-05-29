@@ -68,7 +68,8 @@ const Hero = () => {
       <div className="relative z-10 mt-20 w-full">
         <Navbar />
         <motion.div
-          className="p-10 text-white max-w-4xl h-screen flex flex-col justify-center text-center items-center sm:text-center md:text-center m-0"
+          // className="p-10 text-white max-w-4xl h-screen flex flex-col justify-center text-center items-center sm:text-center md:text-center m-0"
+            className="p-10 text-white max-w-4xl w-full h-full flex flex-col justify-center items-center text-center mx-auto"
           initial="hidden"
           animate="visible"
           transition={{ staggerChildren: 0.2 }}
