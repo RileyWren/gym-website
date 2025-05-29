@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/gym.png' // replace with your actual logo path
+import logo from '../assets/gym.png' 
 
 const Footer = () => {
   return (
