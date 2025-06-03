@@ -190,6 +190,119 @@
 
 
 
+// import React, { useRef } from 'react';
+// import { motion, useInView } from 'framer-motion';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+// import features1 from "../assets/features1.avif";
+// import feature2 from "../assets/features2.jpg";
+// import features3 from "../assets/features3.avif";
+// import features4 from "../assets/features4.jpg";
+
+// const fadeInUp = {
+//   hidden: { opacity: 0, y: 50 },
+//   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+// };
+
+// const SectionWrapper = ({ children }) => {
+//   const ref = useRef(null);
+//   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+//   return (
+//     <motion.div
+//       ref={ref}
+//       variants={fadeInUp}
+//       initial="hidden"
+//       animate={isInView ? "visible" : "hidden"}
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// };
+
+// const Section = ({ image, title, subtitle, bullets, reverse }) => (
+//   <div className={`bg-neutral-950 text-white py-16 px-4 sm:px-12 flex flex-col sm:flex-row ${reverse ? 'sm:flex-row-reverse' : ''} items-center sm:items-start gap-12`}>
+//     <SectionWrapper>
+//       <div className="w-full sm:w-1/2 flex justify-center">
+//         <img src={image} className="rounded-2xl max-w-full h-auto object-cover" alt={title} />
+//       </div>
+//     </SectionWrapper>
+//     <SectionWrapper>
+//       <div className="w-full sm:w-1/2 space-y-6">
+//         <div className="border-2 border-lime-900 rounded-full px-4 py-2 text-sm sm:text-base md:text-lg lg:text-xl w-fit">
+//           {title}
+//         </div>
+//         <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-xl">
+//           {subtitle}
+//         </h2>
+//         <div className="space-y-2 text-sm sm:text-base">
+//           {bullets.map((b, i) => (
+//             <div key={i} className="flex items-center gap-2">
+//               <FontAwesomeIcon icon={faCircleCheck} className="text-green-700" />
+//               {b}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </SectionWrapper>
+//   </div>
+// );
+
+
+// const GroupCrossFit = () => {
+//   return (
+//     <>
+//       <Section
+//         image={features1}
+//         title="Group CrossFit Sessions"
+//         subtitle="Stay active and energized with our fun CrossFit group sessions"
+//         bullets={[
+//           "Only 30 minutes per class",
+//           "Includes warm-up and workout",
+//           "Designed to be fun and motivating"
+//         ]}
+//       />
+//       <Section
+//         image={feature2}
+//         title="Strength Zone"
+//         subtitle="Dominate your lifting goals with elite strength gear"
+//         bullets={[
+//           "Powerlifting and strongman area",
+//           "Olympic platforms, bars, and plates",
+//           "Dumbbells from 5lbs to 250lbs"
+//         ]}
+//         reverse
+//       />
+//       <Section
+//         image={features3}
+//         title="One-on-One Coaching"
+//         subtitle="Train smarter with expert coaches guiding your journey"
+//         bullets={[
+//           "Tailored weight loss plans",
+//           "Competitive-level CrossFit training",
+//           "Powerlifting coaching"
+//         ]}
+//       />
+//       <Section
+//         image={features4}
+//         title="Exclusive Member Events"
+//         subtitle="Build community and push limits with member-only events"
+//         bullets={[
+//           "Friendly in-house competitions",
+//           "Challenges every month",
+//           "Summer cookouts, games, and meetups"
+//         ]}
+//         reverse
+//       />
+//     </>
+//   );
+// };
+
+// export default GroupCrossFit;
+
+
+
+
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -221,33 +334,39 @@ const SectionWrapper = ({ children }) => {
 };
 
 const Section = ({ image, title, subtitle, bullets, reverse }) => (
-  <div className={`bg-neutral-950 text-white py-16 px-4 sm:px-12 flex flex-col sm:flex-row ${reverse ? 'sm:flex-row-reverse' : ''} items-center sm:items-start gap-12`}>
-    <SectionWrapper>
-      <div className="w-full sm:w-1/2 flex justify-center">
-        <img src={image} className="rounded-2xl max-w-full h-auto object-cover" alt={title} />
-      </div>
-    </SectionWrapper>
-    <SectionWrapper>
-      <div className="w-full sm:w-1/2 space-y-6">
-        <div className="border-2 border-lime-900 rounded-full px-4 py-2 text-sm sm:text-base md:text-lg lg:text-xl w-fit">
-          {title}
+  <div className="bg-neutral-950 text-white py-16 px-4 md:px-16">
+    <div className={`grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-16 items-center ${reverse ? 'sm:flex-row-reverse' : ''}`}>
+      <SectionWrapper>
+        <div className="w-full flex justify-center sm:justify-start">
+          <img
+            src={image}
+            className="rounded-2xl w-full max-w-md md:max-w-full h-auto object-cover"
+            alt={title}
+          />
         </div>
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-xl">
-          {subtitle}
-        </h2>
-        <div className="space-y-2 text-sm sm:text-base">
-          {bullets.map((b, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faCircleCheck} className="text-green-700" />
-              {b}
-            </div>
-          ))}
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <div className="space-y-6">
+          <div className="border-2 border-lime-900 rounded-full px-4 py-2 text-sm sm:text-base md:text-lg lg:text-xl w-fit">
+            {title}
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+            {subtitle}
+          </h2>
+          <div className="space-y-3 text-sm sm:text-base">
+            {bullets.map((b, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <FontAwesomeIcon icon={faCircleCheck} className="text-green-700 mt-1" />
+                <span>{b}</span>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </SectionWrapper>
+      </SectionWrapper>
+    </div>
   </div>
 );
-
 
 const GroupCrossFit = () => {
   return (
