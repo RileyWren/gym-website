@@ -10,7 +10,7 @@ const Navbar = () => {
   const navLinks = ["Home", "Services", "Pricing", "Contact"];
 
   return (
-    <nav className="fixed top-5 sm:top-0 left-0 w-full z-50 text-white">
+    <nav className="fixed top-1 sm:top-0 left-0 w-full z-50 text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 sm:mt-2 ">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-2 ">
@@ -38,7 +38,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden focus:outline-none"
         >
-          {isOpen ? <X size={24} /> : <Menu size={45} />}
+          {isOpen ? <X size={24} /> : <Menu size={25} />}
         </button>
       </div>
 
